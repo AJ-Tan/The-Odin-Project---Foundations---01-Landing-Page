@@ -10,7 +10,7 @@
   --color-bg-1: #e5e7eb;
   --color-bg-2: #6d747d;
   --color-bg-3: #1f2937;
-  --color-font-dark-1:#48515d;
+  --color-font-dark-1:#1f2937;
   --color-font-dark-2:#26303e;
   --color-font-light-1:#ffffff;
   --color-font-light-2:#d6d6d6;
@@ -42,11 +42,14 @@ button {
 /* Common Styles */
 .page-header, .page-hero, .page-footer {
   background-color: var(--color-bg-3);
-  color:var(--color-font-light-2);
 }
 
-.page-logo, h1 {
+.page-logo, h1, .cta-content h2 {
   color: var(--color-font-light-1);
+}
+
+.page-header, .page-hero, .page-footer, .cta-content p {
+  color:var(--color-font-light-2);
 }
 
 .page-info, .page-quote {
@@ -57,7 +60,7 @@ button {
   color:var(--color-font-dark-2);
 }
 
-.page-header-content, .page-hero-content {
+.page-header-content, .page-hero-content, .cta-container {
   max-width: var(--content-width-1);
 }
 
@@ -65,7 +68,7 @@ button {
   max-width: var(--content-width-2);
 }
 
-.btn {
+.btn, .btn-white-border {
   border: none;
   border-radius: 0.5rem;
   padding: 0.6rem 2.5rem;
@@ -75,6 +78,10 @@ button {
   color: var(--color-font-light-1);
   font-size: 1.4rem;
   font-weight: 600;
+}
+
+.btn-white-border {
+  border: 3px solid #ffffff;
 }
 
 .section-header {
@@ -183,5 +190,32 @@ button {
     font-size: 1.75rem;
     font-weight: 900;
     text-align: right;
+  }
+}
+
+/* CTA Section */
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 1rem;
+  margin: 8rem auto;
+  padding: 3.3rem 10rem;
+
+  background-color: var(--color-primary);
+}
+
+.cta-content h2 {
+  font-size: 1.875rem;
+}
+
+/* Footer */
+.page-footer {
+  padding-block: 3rem;
+  text-align: center;
+  
+  span {
+    font-size: 1.5rem;
   }
 }

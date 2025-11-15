@@ -1,0 +1,187 @@
+/* Globals */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #3882f6;
+  --color-bg-1: #e5e7eb;
+  --color-bg-2: #6d747d;
+  --color-bg-3: #1f2937;
+  --color-font-dark-1:#48515d;
+  --color-font-dark-2:#26303e;
+  --color-font-light-1:#ffffff;
+  --color-font-light-2:#d6d6d6;
+  --content-width-1: 82rem;
+  --content-width-2: 65rem;
+}
+
+body {
+  font-family: Roboto;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  font: inherit;
+}
+
+/* Common Styles */
+.page-header, .page-hero, .page-footer {
+  background-color: var(--color-bg-3);
+  color:var(--color-font-light-2);
+}
+
+.page-logo, h1 {
+  color: var(--color-font-light-1);
+}
+
+.page-info, .page-quote {
+  color: var(--color-font-dark-1);
+}
+
+.section-header, .quote-author {
+  color:var(--color-font-dark-2);
+}
+
+.page-header-content, .page-hero-content {
+  max-width: var(--content-width-1);
+}
+
+.page-info, .page-quote-content {
+  max-width: var(--content-width-2);
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 2.5rem;
+  margin-block: 1rem;
+
+  background-color: var(--color-primary);
+  color: var(--color-font-light-1);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.section-header {
+  font-size: 3rem;
+}
+
+/* Header */
+.page-header-content, .page-nav, .page-nav ul {
+  display: flex;
+}
+
+.page-header-content {
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-block: 1.25rem;
+}
+
+.page-logo {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.page-nav ul {
+  align-items: center;
+  gap: 2rem;
+
+  a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+/* Main */
+/* Hero */
+.page-hero {
+  padding-block: 9rem;
+}
+
+.page-hero-content {
+  display: flex;
+  margin-inline: auto;
+}
+
+.hero-text {
+  padding-inline-end: 4rem;
+}
+
+.hero-img-placeholder {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-bg-2);
+  width: 42rem;
+}
+
+/* Page Info Section */
+.page-info, .info-list {
+  padding-block: 4rem;
+}
+
+.page-info {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.info-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  li {
+    max-width: 13rem;
+  }
+}
+
+.info-img-placeholder {
+  border: 5px solid #5190f7;
+  border-radius: 1rem;
+  margin-block-end: 0.5rem;
+
+  height: 13rem;
+  width: 13rem;
+}
+
+/* Page Quote Section */
+.page-quote {
+  background-color: var(--color-bg-1);
+}
+
+.page-quote-content{
+  margin-inline: auto;
+  padding: 10rem 2rem;
+
+  .quote-text {
+    font-size: 2.8rem;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .quote-author {
+    margin-right: 3rem;
+
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: right;
+  }
+}

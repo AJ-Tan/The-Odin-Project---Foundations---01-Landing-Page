@@ -214,8 +214,12 @@ button {
 .page-footer {
   padding-block: 3rem;
   text-align: center;
-  
+}
+
+.page-footer p{
+  font-size: 1.5rem;
+
   span {
-    font-size: 1.5rem;
+    margin-inline: 0.5rem;
   }
 }
